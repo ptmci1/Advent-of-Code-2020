@@ -16,9 +16,8 @@ def solve(input_arr):
         high_bound = elem.split()[0].split('-')[1]
         target = list(elem.split()[1])[0]
         password = elem.split()[2]
-        # print(low_bound, high_bound, target, password)
-        if int(high_bound) > password.count(target) > int(low_bound):
-            ++acc
+        if int(high_bound) >= password.count(target) >= int(low_bound):
+            acc += 1
     return acc
 
 
