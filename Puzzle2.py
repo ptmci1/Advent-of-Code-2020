@@ -10,10 +10,16 @@ def read_file():
 
 
 def solve(input_arr):
+    acc = 0
     for elem in input_arr:
-        # low_bound = elem.split()
-        low_bound = list(elem.split()[0])
-        return low_bound
+        low_bound = elem.split('-')[0]
+        high_bound = elem.split()[0].split('-')[1]
+        target = list(elem.split()[1])[0]
+        password = elem.split()[2]
+        # print(low_bound, high_bound, target, password)
+        if int(high_bound) > password.count(target) > int(low_bound):
+            ++acc
+    return acc
 
 
 print(solve(read_file()))
