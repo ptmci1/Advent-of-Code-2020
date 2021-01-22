@@ -9,7 +9,7 @@ def read_file():
     return input_arr
 
 
-def solve(input_arr):
+def solve1(input_arr):
     acc = 0
     for elem in input_arr:
         low_bound = elem.split('-')[0]
@@ -21,4 +21,7 @@ def solve(input_arr):
     return acc
 
 
-print(solve(read_file()))
+def solve2(input_arr):
+
+
+# print(solve2(read_file()))
