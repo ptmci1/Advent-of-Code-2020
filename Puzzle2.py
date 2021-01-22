@@ -1,7 +1,7 @@
 # AoC 2020 Puzzle 2
 
 
-# Reading input from text file, converting to array of ints
+# Reading input from text file, converting to array
 def read_file():
     input_raw = open("Input2.txt", "r")
     input_arr = input_raw.read().split('\n')
